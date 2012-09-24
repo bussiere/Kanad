@@ -1,0 +1,181 @@
+<html>
+<head>
+<style type="text/css">
+body {
+background-color:#000000;
+} 
+.mainimage
+{
+position: relative;
+top:0px;
+left: 25%;
+width:25%;
+}
+.Item1Menu1 {
+position: absolute;
+color:#ff0000;	 
+top: 260px;
+left: 150px;
+ }
+.Item2Menu1 {
+position: absolute;
+color:#ff0000;	 
+top: 260px;
+left: 250px;
+ }
+ .Item3Menu1 {
+position: absolute;
+color:#ff0000;	 
+top: 260px;
+left: 350px;
+ }
+ .Item4Menu1
+ {
+ position: absolute;
+color:#ff0000;	 
+top: 260px;
+left: 450px;
+ }
+ .Item5Menu1
+ {
+ position: absolute;
+color:#ff0000;	 
+top: 260px;
+left: 550px;
+ }
+.Item6Menu1
+ 
+  {
+ position: absolute;
+color:#ff0000;	 
+top: 260px;
+left: 650px;
+ }
+ .Item7Menu1
+ 
+  {
+ position: absolute;
+color:#ff0000;	 
+top: 260px;
+left: 650px;
+ }
+.Login
+  {
+ position: absolute;
+color:#ff0000;	 
+top: 220px;
+left: 300px;
+width:250px;
+ }
+.Password
+  {
+ position: absolute;
+color:#ff0000;	 
+top: 220px;
+left: 520px;
+width:300px;
+ }
+.Submit
+  {
+ position: absolute;
+color:#ff0000;	 
+top: 220px;
+left:800px;
+ }
+</style>
+</head>
+<body>
+<div class="mainimage">
+<IMG SRC="../media/main2.jpg">
+</div>
+<div class="Item1Menu1">
+Bondage
+</div>
+<div class="Item2Menu1">
+Soubrette
+</div>
+<div class="Item3Menu1">
+Latex
+</div>
+<div class="Item4Menu1">
+Bottes
+</div>
+<div class="Item5Menu1">
+Dark
+</div>
+<div class="Item6Menu1">
+Spanking
+</div>
+<form method="post" action="">
+<div class="Login">
+Mail<input type="text" name="zlog" id="zlog" />
+</div>
+<div class="Password">
+Mot de passe :<input type="password" name="zpass" id="zpass" />
+
+</div>
+<div class="Submit">
+<input type="submit" value="Envoyer" />
+</div>
+<input type="hidden" name="zhidden" id="zhidden" />
+</form>
+
+{% for item in menu.items %}
+
+{% item.contenu %}
+{% item.positionX %}
+{% item.positionY %}
+
+{% for item2 in item.menu %}
+
+{% item2.contenu %}
+{% item2.positionX %}
+{% item2.positionY %}
+
+{% endfor %}
+
+{% endfor %}
+
+
+
+{% for tag in acteur.tags %}
+
+{% tag %}
+
+{% endfor %}
+
+{% film.achat %}
+
+
+{% acteur.nom %}
+{% acteur.id %}
+{% acteur.descriptioncourte %}
+
+{% acteur.avatar % }
+{% acteur.avatar.image.positionX %} 
+{% acteur.avatar.image.positionY %} 
+{% acteur.avatar.image.contenu %} 
+
+
+
+{% for image in acteur.images %}
+'
+{% image.contenu %}
+{% image.positionX %}
+{% image.positionY %}
+{% endfor %}
+
+
+
+{% for film in films %}
+
+{% film.imageprincipaleminiature %}
+{% film.descriptioncourte %}
+{% film.lien %}
+
+
+
+{% endfor %}
+
+</body>
+</html>

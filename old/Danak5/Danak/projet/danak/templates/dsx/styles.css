@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* CSS Document */
+
+#body{
+	background-image:url(../images/fond_site.jpg)
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#site{
+	height:1024px;
+	width:1024px;
+	background-color:#000000;
+	margin:auto;
+	padding:5px 0 0 0;
+}
+
+#header{
+	width:971px;
+	height:237px;
+	margin:auto;
+	background-image:url(../images/fond_header.jpg);
+	background-color:#000204;
+}
+
+#menu{
+	height:33px;
+	width:970px;
+	margin:2px auto;
+}
+#btn{
+	height:33px;
+	width:194px;
+	background-image:url(../images/fond_btn.jpg);
+	background-repeat:no-repeat;
+	text-align:center;
+	float:left;
+	color:#FFFFFF;
+}
+#btn a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#btn p{
+	margin:8px;
+}
+
+#login{
+	height:47px;
+	width:971px;
+	margin:auto;
+	background-image:url(../images/fond_login.jpg);
+	background-repeat:no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#CC0000;
+}
+#logtxt{
+	height:12px;
+	margin:12px 0 0 10px;
+	position:absolute;
+	width: 425px;
+}
+#logticket{
+	height:12px;
+	margin:15px 15px 0 0;
+	float:right;
+}
+
+#phot1{
+	height:80px;
+	width:82px;
+	margin:24px 0 0 32px;
+	background-image:url(../images/pic1.jpg);
+	position:absolute;
+}
+#phot2{
+	height:85px;
+	width:86px;
+	margin:24px 0 0 136px;
+	background-image:url(../images/pic2.jpg);
+	position:absolute;
+}
+#phot3{
+	height:87px;
+	width:89px;
+	margin:23px 0 0 240px;
+	background-image:url(../images/pic3.jpg);
+	position:absolute;
+}
+#phot4{
+	height:85px;
+	width:85px;
+	margin:24px 0 0 343px;
+	background-image:url(../images/pic4.jpg);
+	position:absolute;
+}
+#phot5{
+	height:87px;
+	width:88px;
+	margin:23px 0 0 452px;
+	background-image:url(../images/pic1.jpg);
+	position:absolute;
+}
+#phot6{
+	height:86px;
+	width:87px;
+	margin:24px 0 0 561px;
+	background-image:url(../images/pic2.jpg);
+	position:absolute;
+}
+#phot7{
+	height:86px;
+	width:88px;
+	margin:24px 0 0 672px;
+	background-image:url(../images/pic3.jpg);
+	position:absolute;
+}
+#phot8{
+	height:84px;
+	width:86px;
+	margin:25px 0 0 775px;
+	background-image:url(../images/pic4.jpg);
+	position:absolute;
+}
+#phot9{
+	height:85px;
+	width:87px;
+	margin:25px 0 0 876px;
+	background-image:url(../images/pic1.jpg);
+	position:absolute;
+}
+
+#corps{
+	height:527px;
+	width:971px;
+	margin:auto;
+	color:#FFFFFF;
+	background-image:url(../images/fond_corps.jpg);
+}
+#vidéo{
+	width:663px;
+	height:374px;
+	margin:130px 0 0 35px;
+	position:absolute;
+	border:1px;
+	border-color:#FFFFFF;
+	border-style:solid;
+	background-color:#323232;
+}
+#description{
+	width:242px;
+	height:374px;
+	float:right;
+	margin:130px 5px 0 0;
+	font-size:12px;
+}
+#film p{
+	margin:20px 10px;
+}
+#film{
+	height:187px;
+	width:242px;
+	border:1px;
+	border-color:#FFFFFF;
+	border-style:solid;
+}
+#descripvid{
+	height:179px;
+	width:242px;
+	border:1px;
+	border-color:#FFFFFF;
+	border-style:solid;
+	margin:6px 0 0 0;
+}
+#descripvid p{
+	margin:20px 10px;
+}
+#actor2{
+	width:60px;
+	height:90px;
+	background-image:url(../images/actor.png);
+	margin:auto;
+	position:relative;
+	top:-42px;
+}
+#txtact2{
+	width:48px;
+	height:45px;
+	margin:42px 7px 0 7px;
+	text-align:center;
+	font-size:10px;
+	color:#FFFFFF;
+	position:relative;
+	top:42px;
+}
+#descripactor2{
+	height:275px;
+	width:242px;
+	border:1px;
+	border-color:#FFFFFF;
+	border-style:solid;
+	margin:4px 0 0 0;
+	position:relative;
+	top:-42px;
+}
+#descripactor2 p{
+	margin:20px 10px;
+}
+
+#tag{
+	width:967px;
+	height:48px;
+	background-image:url(../images/fond_tag.jpg);
+	margin: 0 0 0 28px;
+	position:absolute;
+}
+#tag p{
+	margin:15px 0 0 20px;
+	color:#FFFFFF;
+	font-size:14px;
+}
+
+#footer{
+	width:971px;
+	height:98px;
+	background-image:url(../images/fond_footer.jpg);
+	margin:48px auto;
+	color:#FFFFFF;
+}
+#footer a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#txtfoot{
+	margin:50px 0 0 685px;
+	position:absolute;
+}
+#casting{
+	height:14px;
+	width:80px;
+	font-size:14px;
+	float:right;
+	margin:70px 0 0 0;
+}
+#actor{
+	width:60px;
+	height:90px;
+	background-image:url(../images/actor.png);
+	margin:5px 10px;
+	float:left;
+}
+#txtact{
+	width:48px;
+	height:45px;
+	margin:42px 7px 0 7px;
+	text-align:center;
+	font-size:10px;
+	color:#FFFFFF;
+}
+.cgv{
+	font-size:10px;
+	text-align:right;
+	position:relative;
+	top:-50px;
+	margin:0 30px;
+}
+.cgv a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#avertissement{
+	height:667px;
+	width:895px;
+	border:1px;
+	border-color:#1A171B;
+	border-style:solid;
+	background-color:#FFFFFF;
+}
+#noir{
+	width:659px;
+	height:347px;
+	margin:125px 0 0 125px;
+	background-color:#000000;
+}
+#boutons{
+	height:88px;
+	width:831px;
+	margin:20px 0 0 32px;
+}
+.entrer{
+	float:right;
+}
+.sortir{
+	float:left;
+}
+#entrer{
+	font-size:36px;
+	height:40px;
+	width:70px;
+	float:right;
+	text-align:right;
+	margin:5px 32px;
+}
+#sortir{
+	font-size:36px;
+	height:40px;
+	width:100px;
+	float:left;
+	margin:5px 32px;
+}
+
+#panier{
+	width:600px;
+	height:330px;
+	background-image:url(../images/fond_panier.png);
+	font-size:30px;
+}
+#panier a{
+	text-decoration:none;
+	color:#000000;
+}
+#cadis{
+	height:49px;
+	width:49px;
+	background-image:url(../images/cadis.png);
+	margin:20px;
+}
+.solde{
+	position:relative;
+	right:-330px;
+	top:-40px;
+}
+.prix{
+	position:relative;
+	right:-20px;
+}
+.buy{
+	position:relative;
+	right:-350px;
+	top:-53px;
+}
+.nb{
+	position:relative;
+	right:-20px;
+	top:-53px;
+}
+.avantage{
+	position:relative;
+	top:-20px;
+	text-align:center;
+}

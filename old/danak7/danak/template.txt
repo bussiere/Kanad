@@ -1,0 +1,71 @@
+INSERT INTO "someTable" VALUES ("1",null,null,"Film_Modele",null,null,null);
+INSERT INTO "someTable" VALUES ("2",null,null,"index",null,null,null);
+INSERT INTO "someTable" VALUES ("3",null,null,"test",null,null,null);
+INSERT INTO "someTable" VALUES ("4",null,null,"shibari_film",null,null,null);
+INSERT INTO "someTable" VALUES ("5",null,null,"shibarititrefilm_film",null,null,null);
+INSERT INTO "someTable" VALUES ("7",null,null,"Acteur_Modele",null,null,null);
+INSERT INTO "someTable" VALUES ("8",null,null,"film2_film",null,null,null);
+INSERT INTO "someTable" VALUES ("9",null,null,"Titre du film ici shibari_film",null,null,null);
+
+INSERT INTO "someTable" VALUES ("1","tes","{% for film in films %}
+{{ film.Nom }}<br> 
+{% for acteur in film.Acteur.all %}
+{{ acteur.Nom }}<br>
+{% endfor %}
+{% for tag in film.Tag.all %}
+{{ tag.Nom }}<br>
+{% endfor %}
+{{ film.url }}<br>
+{{ film.Type }}<br>
+{{ film.Description_courte}}<br> 
+{{ film.Description }}<br>
+{{ film.Valeur_Ticket }}<br>
+Acteurs  ActeurImage ActeurDescription<br>
+textecontenu<br>
+
+
+
+<a href=""../films/{{ film.Nom }}_film"">{{ film.Nom }}</a>
+<br>
+<br>
+{% endfor %}
+
+");
+INSERT INTO "someTable" VALUES ("2","toto","toto");mpv
+
+
+
+Film_Modele
+
+Film_Modele
+
+{% for film in films %}
+{{ film.Nom }}<br> 
+{% for acteur in film.Acteur.all %}
+{{ acteur.Nom }}<br>
+{% endfor %}
+{% for tag in film.Tag.all %}
+{{ tag.Nom }}<br>
+{% endfor %}
+{{ film.url }}<br>
+{{ film.Type }}<br>
+{{ film.Description_courte}}<br>
+{{ film.Description }}<br>
+{{ film.Valeur_Ticket }}<br>
+Acteurs  ActeurImage ActeurDescription<br>
+textecontenu<br>
+
+
+
+<a href=""../films/{{ film.Nom }}_film"">{{ film.Nom }}</a>
+<br>
+<br>
+{% endfor %}
+
+
+	template_Film_Modele
+	template_index
+	
+	
+
+

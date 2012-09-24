@@ -1,0 +1,7 @@
+{% for film in films %}
+{{film.Nom}}<form action="." method="get"><input type="hidden" name="filmId" value="{{film.Id}}"><input type="hidden" name="heure" value="h">
+<input type="submit" value="Ajouter"></form> 
+<hr>
+{% endfor %}
+
+
