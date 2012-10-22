@@ -21,3 +21,9 @@
 .row-fluid .span4 {
   width: 31.914893617021278%;
 }
+
+.page-header {
+
+    margin: 18px 0;
+    padding-bottom: 17px;
+}
