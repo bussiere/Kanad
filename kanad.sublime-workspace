@@ -11,6 +11,17 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "from django_quicky import routing\n \nurl, urlpatterns = routing()\n \n \n@url('/une/regex/que/django/comprends')\ndef une_vue(request):\n    ...\n \n \n@url('/on/peut/cummuler/les/routes')\n@url('/une/regex/que/django/comprends')\ndef une_vue(request):# Create your views here.\n",
+			"file": "moteur/views.py",
+			"file_size": 27,
+			"file_write_time": 129477666440000000,
+			"settings":
+			{
+				"buffer_size": 267,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -36,11 +47,23 @@
 	},
 	"file_history":
 	[
+		"/C/AtelierSODA/workspaceSODA/madrhas/person.txt",
+		"/C/melina.txt",
+		"/C/AtelierSODA/workspaceSODA/temp.txt",
 		"/C/AtelierSODA/workspaceSODA/madrhas/test.txt",
-		"/D/Documents/test.txt",
-		"/C/AtelierSODA/IDE/eclipse/debugg.txt",
 		"/C/AtelierSODA/IDE/eclipse/eclipse.ini",
 		"/D/Documents/GitHub/PersoStats/index.html",
+		"/D/Documents/GitHub/Scripts/horaire.py",
+		"/C/AtelierSODA/workspaceSODA/temp3.txt",
+		"/C/AtelierSODA/workspaceSODA/temp2.txt",
+		"/D/Documents/GitHub/Scripts/shutdown.py",
+		"/D/Documents/GitHub/Scripts/reboot.py",
+		"/C/Documents and Settings/Micro/Bureau/EelFish.py",
+		"/D/Documents/GitHub/DodgeBallTactical/Gameplay.txt",
+		"/D/Documents/GitHub/Scripts/euromillion.py",
+		"/D/Documents/GitHub/Scripts/compte.py",
+		"/D/Documents/test.txt",
+		"/C/AtelierSODA/IDE/eclipse/debugg.txt",
 		"/D/Documents/GitHub/PersoStats/dojo/dojo.js",
 		"/C/AtelierSODA/workspaceSODA/madrhas/test/JavaSource/fr/gouv/finances/madrhas/bean/Enumeration/rename.py",
 		"/D/Documents/GitHub/Scripts/Commit.py",
@@ -146,6 +169,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"toto",
+			"titi",
+			"toto",
+			"titi",
+			"application",
 			"300",
 			"application",
 			"600m",
@@ -179,6 +207,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"profil",
 			"400",
 			"center",
 			"middle",
@@ -199,8 +228,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "moteur/views.py",
+					"settings":
+					{
+						"buffer_size": 267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								76
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
