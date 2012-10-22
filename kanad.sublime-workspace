@@ -12,13 +12,37 @@
 	"buffers":
 	[
 		{
-			"contents": "from django_quicky import routing\n \nurl, urlpatterns = routing()\n \n \n@url('/une/regex/que/django/comprends')\ndef une_vue(request):\n    ...\n \n \n@url('/on/peut/cummuler/les/routes')\n@url('/une/regex/que/django/comprends')\ndef une_vue(request):# Create your views here.\n",
 			"file": "moteur/views.py",
-			"file_size": 27,
-			"file_write_time": 129477666440000000,
 			"settings":
 			{
-				"buffer_size": 267,
+				"buffer_size": 347,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "settings.py",
+			"settings":
+			{
+				"buffer_size": 5475,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 843,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "[class*=\"span\"] {\n background-color: lightgreen;\n margin-bottom: 10px;\n border-radius: 5px 5px 5px 5px;\n line-height: 80px;\n text-align: center;\n}\n[class=\"span10\"] {\n background-color: green;\n}\n.row {\n  margin-left: -20px;\n}\n.span4 {\n    width: 300px;\n}\n.row-fluid {\n  width: 100%;\n}",
+			"file": "static/css/index.css",
+			"file_size": 272,
+			"file_write_time": 129953661174843750,
+			"settings":
+			{
+				"buffer_size": 283,
 				"line_ending": "Windows"
 			}
 		}
@@ -228,7 +252,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -236,20 +260,100 @@
 					"file": "moteur/views.py",
 					"settings":
 					{
-						"buffer_size": 267,
+						"buffer_size": 347,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								76
+								145,
+								145
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "settings.py",
+					"settings":
+					{
+						"buffer_size": 5475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3739,
+								3739
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2160.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/index.html",
+					"settings":
+					{
+						"buffer_size": 843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								843
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "static/css/index.css",
+					"settings":
+					{
+						"buffer_size": 283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

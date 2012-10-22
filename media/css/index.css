@@ -8,11 +8,16 @@
 [class="span10"] {
  background-color: green;
 }
-
 .row {
   margin-left: -20px;
 }
-
 .span4 {
     width: 300px;
+}
+.row-fluid {
+  width: 100%;
+}
+
+.row-fluid .span4 {
+  width: 31.914893617021278%;
 }
