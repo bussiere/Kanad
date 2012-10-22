@@ -1,13 +1,19 @@
 <html>
 <head>
- <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
- <link href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-  <link href="{{ STATIC_URL }}css/index.css" rel="stylesheet" type="text/css">
+ <link href="/media/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+ <link href="/media/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+  <link href="/media/css/index.css" rel="stylesheet" type="text/css">
 </head>
 <script src="http://yandex.st/dojo/1.8.0/dojo/dojo.js"></script>
 <body>
 <img src="/media/haruhi.jpg" /><br>
 <img src="{{ STATIC_URL }}haruhi.jpg" /><br>
+
+  <div class="row">
+     <div class="span4">4 colonnes</div>
+     <div class="span8">8 colonnes</div>
+   </div>
+
 </body>
 </html>
 

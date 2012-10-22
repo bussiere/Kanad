@@ -8,3 +8,11 @@
 [class="span10"] {
  background-color: green;
 }
+
+.row {
+  margin-left: -20px;
+}
+
+.span4 {
+    width: 300px;
+}
