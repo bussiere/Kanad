@@ -10,41 +10,75 @@
 <img src="{{ STATIC_URL }}haruhi.jpg" /><br>
 
   <div class="container">
+
 <div class="page-header">
    <h1>Mon amour pour les tigres</h1>
 </div>
+
   <div class="row">
     <div class="span1">1 col</div>
     <div class="span2">2 colonnes</div>
     <div class="span3">3 colonnes</div>
     <div class="span6">6 colonnes</div>
   </div>
+
+
   <div class="row">
     <div class="span12">12 colonnes</div>
   </div>
+
   <div class="row">
     <div class="span4">4 colonnes</div>
     <div class="span8">8 colonnes</div>
   </div>
 
   <div class="row">
-    <div class="span4"
+    <div class="span5">
 <form class="well">
+        
   <fieldset>
-    <legend>Log :</legend>
-     <input type="text" name="log" value="log" id="log" class="input-small" />
-     <input type="password" name="pass" value="pass" id="pass" class="input-small"/>
-    <button type="submit" class="btn btn-primary pull-right">Envoyer</button>
+    <div class="input-append">
+     <input type="search" name="log" value="log" id="log" class="span3"/>
+     <input type="password" name="pass" value="pass" id="pass" class="span3" />
+    <button class="btn">Envoyer</button>
+    </div>
   </fieldset>
+  
 </form>
+
+    <div class="input-append">
+        <input type="search" class="span3" placeholder="Search" name="search" id="search"/>
+        <button class="btn">button</button>
+    </div>
 </div>
 </div>
 
 
-
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <form class="form-horizontal" method="post" action="/form/">
+                <fieldset>
+                    <legend>Please login</legend>
+                    <div class="control-group">
+                        <label class="control-label" for="id_username">Username</label>
+                        <div class="controls">
+                            <input name="username" maxlength="100" placeholder="Enter your username..." type="text" class="input-large" id="id_username" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="id_password">Password</label>
+                        <div class="controls">
+                            <input name="password" maxlength="100" placeholder="Enter your password..." type="password" class="input-large" id="id_password" />
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
 
 </div>
   
 </body>
 </html>
-
