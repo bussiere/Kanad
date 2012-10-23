@@ -28,21 +28,29 @@
 			}
 		},
 		{
+			"contents": "<html>\n<head>\n <link href=\"{{ STATIC_URL }}bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\" type=\"text/css\">\n <link href=\"{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.min.css\" rel=\"stylesheet\" type=\"text/css\">\n  <link href=\"{{ STATIC_URL }}css/index.css\" rel=\"stylesheet\" type=\"text/css\">\n</head>\n<script src=\"http://yandex.st/dojo/1.8.0/dojo/dojo.js\"></script>\n<body>\n<img src=\"/media/haruhi.jpg\" /><br>\n<img src=\"{{ STATIC_URL }}haruhi.jpg\" /><br>\n\n  <div class=\"container\">\n\n<div class=\"page-header\">\n   <h1>Mon amour pour les tigres</h1>\n</div>\n\n  <div class=\"row\">\n    <div class=\"span1\">1 col</div>\n    <div class=\"span2\">2 colonnes</div>\n    <div class=\"span3\">3 colonnes</div>\n    <div class=\"span6\">6 colonnes</div>\n  </div>\n\n\n  <div class=\"row\">\n    <div class=\"span12\">12 colonnes</div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"span4\">4 colonnes</div>\n    <div class=\"span8\">8 colonnes</div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"span7\">\n<form class=\"well\">\n        \n  <fieldset>\n    <div class=\"input-append\">\n\n                            <input name=\"username\" maxlength=\"100\" placeholder=\"Enter your username...\" type=\"text\" class=\"input-large\" id=\"id_username\" />\n\n\n                            <input name=\"password\" maxlength=\"100\" placeholder=\"Enter your password...\" type=\"password\" class=\"input-large\" id=\"id_password\" />\n                   \n    <button class=\"btn btn-mini\">Envoyer</button>\n         </div>\n\n\n  </fieldset>\n  \n</form>\n\n\n\n\n\n\n\n</div>\n  \n</body>\n</html>",
 			"file": "templates/index.html",
+			"file_size": 1506,
+			"file_write_time": 129953852901250000,
 			"settings":
 			{
-				"buffer_size": 843,
+				"buffer_size": 1506,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "[class*=\"span\"] {\n background-color: lightgreen;\n margin-bottom: 10px;\n border-radius: 5px 5px 5px 5px;\n line-height: 80px;\n text-align: center;\n}\n[class=\"span10\"] {\n background-color: green;\n}\n.row {\n  margin-left: -20px;\n}\n.span4 {\n    width: 300px;\n}\n.row-fluid {\n  width: 100%;\n}",
-			"file": "static/css/index.css",
-			"file_size": 272,
-			"file_write_time": 129953661174843750,
+			"file": "templates/test.html",
 			"settings":
 			{
-				"buffer_size": 283,
+				"buffer_size": 1297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "media/css/index.css",
+			"settings":
+			{
+				"buffer_size": 401,
 				"line_ending": "Windows"
 			}
 		}
@@ -71,6 +79,7 @@
 	},
 	"file_history":
 	[
+		"/D/Documents/GitHub/Kanad/static/css/index.css",
 		"/C/AtelierSODA/workspaceSODA/madrhas/person.txt",
 		"/C/melina.txt",
 		"/C/AtelierSODA/workspaceSODA/temp.txt",
@@ -252,7 +261,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -314,7 +323,7 @@
 					"file": "templates/index.html",
 					"settings":
 					{
-						"buffer_size": 843,
+						"buffer_size": 1506,
 						"regions":
 						{
 						},
@@ -322,12 +331,42 @@
 						[
 							[
 								0,
-								843
+								1506
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 576.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/test.html",
+					"settings":
+					{
+						"buffer_size": 1297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1297,
+								1297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -336,19 +375,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "static/css/index.css",
+					"buffer": 4,
+					"file": "media/css/index.css",
 					"settings":
 					{
-						"buffer_size": 283,
+						"buffer_size": 401,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								283,
-								0
+								233,
+								233
 							]
 						],
 						"settings":
