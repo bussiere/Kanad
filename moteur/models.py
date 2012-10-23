@@ -22,7 +22,6 @@ class Avis(models.Model):
     Note = models.FloatField(null=True,blank=True)
     Lien = models.ForeignKey('liens.Lien',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
-	
     def ___str__(self):
         return self.Client
     def __unicode__(self):
@@ -48,13 +47,16 @@ class ImageItem(models.Model):
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
     Type = models.ForeignKey('TypeImageItem',null=True,blank=True)
 
+class TypeItem(models.Model):
+    Nom =  models.CharField(max_length=200,null=True,blank=True)
+
 class Item(models.Model):
     Nom = models.CharField(max_length=200,null=True,blank=True)
     #Code_Generee = models.CharField(max_length=1500,null=True,blank=True)
     Tag = models.ManyToManyField('tags.Tag',null=True,blank=True)
     Pub_date = models.DateTimeField('date published',null=True,blank=True)
     Creation = models.DateTimeField('date published',null=True,blank=True)
-    Images = models.ManyToManyField(ImageFilm,null=True,blank=True)
+    Images = models.ManyToManyField('ImageFilm',null=True,blank=True)
     # Image principale representatve du film (a afficher lors des recherches, du panier, etc.,null=True,blank=True)
     FamilleTag = models.ManyToManyField('tags.FamilleTag',null=True,blank=True)
     Type = models.CharField(max_length=200,null=True,blank=True)
@@ -62,12 +64,13 @@ class Item(models.Model):
     Description = models.CharField(max_length=400,null=True,blank=True)
     Valeur_Ticket = models.FloatField(null=True,blank=True)
     Mise_en_avant = models.CharField(max_length=200,null=True,blank=True)
-    Acteurs = models.ManyToManyField(Acteur,null=True,blank=True)
+    Acteurs = models.ManyToManyField('Acteur',null=True,blank=True)
     Lien = models.ManyToManyField('liens.Lien',null=True,blank=True)
     Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
     Avis = models.ManyToManyField(Avis,null=True,blank=True)
     Prix = models.ForeignKey('Prix',null=True,blank=True)
+    TypeItem = models.ForeignKey('TypeItem',null=True,blank=True)
 
 class ImageActeur(models.Model):
     Nom = models.CharField(max_length=200,null=True,blank=True)
@@ -82,7 +85,7 @@ class ImageActeur(models.Model):
     Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
     Lien = models.ForeignKey('liens.Lien',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
-    Prix = models.FloatField(null=True,blank=True)
+    Prix = models.ForeignKey('Prix',null=True,blank=True)
 
     def ___str__(self):
     	return self.Nom
@@ -129,6 +132,9 @@ class ApiLiee(models.Model):
     def __unicode__(self):
         return self.Nom
 
+class TypeFilm(models.Model):
+    Nom =  models.CharField(max_length=200,null=True,blank=True)
+
 class TypeImageFilm(models.Model):
     Nom =  models.CharField(max_length=200,null=True,blank=True)
 
@@ -148,7 +154,8 @@ class ImageFilm(models.Model):
     Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
     Lien = models.ForeignKey('liens.Lien',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
-    Prix = models.FloatField(null=True,blank=True)
+    Prix = models.ForeignKey('Prix',null=True,blank=True)
+    TypeFilm = models.ForeignKey('TypeFilm',null=True,blank=True)
 
     def ___str__(self):
     	return self.Nom
@@ -185,7 +192,7 @@ class Film(models.Model):
     Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
     Avis = models.ManyToManyField(Avis,null=True,blank=True)
-    Prix = models.FloatField(null=True,blank=True)
+    Prix = models.ForeignKey('Prix',null=True,blank=True)
 
     def ___str__(self):
     	return self.Nom
@@ -221,7 +228,7 @@ class ImageVente(models.Model):
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
     Gratuit = models.NullBooleanField(blank=True)
     Avis = models.ManyToManyField(Avis,null=True,blank=True)
-    Prix = models.FloatField(null=True,blank=True)
+    Prix = models.ForeignKey('Prix',null=True,blank=True)
 
     def ___str__(self):
     	return self.Nom
@@ -252,7 +259,7 @@ class Pack(models.Model):
     Lien = models.ForeignKey('liens.Lien',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
     Avis = models.ManyToManyField(Avis,null=True,blank=True)
-    Prix = models.FloatField(null=True,blank=True)
+    Prix = models.ForeignKey('Prix',null=True,blank=True)
 
     def ___str__(self):
     	return self.Nom
