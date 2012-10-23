@@ -3,6 +3,9 @@ from django.db import models
 
 
 
+class TypeTicket(models.Model):
+    Nom = models.CharField(max_length=200,null=True,blank=True)
+
 class Ticket(models.Model):
     Client = models.ForeignKey('clients.Client',null=True,blank=True)
     Creation = models.DateTimeField('date published',null=True,blank=True)
@@ -11,6 +14,8 @@ class Ticket(models.Model):
     Films = models.ManyToManyField('moteur.Film',null=True,blank=True)
     ImagesVente = models.ManyToManyField('moteur.ImageVente',null=True,blank=True)
     Packs = models.ManyToManyField('moteur.Pack',null=True,blank=True)
+    Prix = models.ForeignKey('moteur.Prix',null=True,blank=True)
+    Type = models.ForeignKey('TypeTicket',null=True,blank=True)
     def ___str__(self):
     	return self.Nom
     def __unicode__(self):

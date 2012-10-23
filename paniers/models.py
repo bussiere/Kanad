@@ -11,6 +11,7 @@ class ItemAchat(models.Model):
     Date_paiement = models.DateTimeField('date paiement',null=True,blank=True)
     Total = models.FloatField(null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
+    Item = models.ManyToManyField('moteur.Item',null=True,blank=True)
     
 
 class Panier(models.Model):

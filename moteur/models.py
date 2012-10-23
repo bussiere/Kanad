@@ -5,6 +5,16 @@ from copy import deepcopy
 # Create your models here.
 
 
+class Currency(models.Model):
+    Nom = models.CharField(max_length=200,null=True,blank=True)
+    Abreviation = models.CharField(max_length=5,null=True,blank=True)
+    Symbole = models.CharField(max_length=5,null=True,blank=True)
+
+class Prix(models.Model):
+    Currency = models.ForeignKey('Currency')
+    Abreviation = models.FloatField(null=True,blank=True)
+   
+
 class Avis(models.Model):
     Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
     Client = models.ForeignKey('clients.Client',null=True,blank=True)
@@ -18,9 +28,46 @@ class Avis(models.Model):
     def __unicode__(self):
         return self.Client
 
-	
 
 
+class TypeImageItem(models.Model):
+    Nom =  models.CharField(max_length=200,null=True,blank=True)
+
+
+class ImageItem(models.Model):
+    Nom = models.CharField(max_length=200,null=True,blank=True)
+    Creation = models.DateTimeField('date published',null=True,blank=True)
+    Tag = models.ManyToManyField('tags.Tag',null=True,blank=True)
+    FamilleTag = models.ManyToManyField('tags.FamilleTag',null=True,blank=True)
+    Type = models.CharField(max_length=200,null=True,blank=True)
+    Description_courte = models.CharField(max_length=200,null=True,blank=True)
+    Description = models.CharField(max_length=400,null=True,blank=True)
+    Image = models.FileField(upload_to='media',null=True,blank=True)
+    Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
+    Lien = models.ForeignKey('liens.Lien',null=True,blank=True)
+    Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
+    Type = models.ForeignKey('TypeImageItem',null=True,blank=True)
+
+class Item(models.Model):
+    Nom = models.CharField(max_length=200,null=True,blank=True)
+    #Code_Generee = models.CharField(max_length=1500,null=True,blank=True)
+    Tag = models.ManyToManyField('tags.Tag',null=True,blank=True)
+    Pub_date = models.DateTimeField('date published',null=True,blank=True)
+    Creation = models.DateTimeField('date published',null=True,blank=True)
+    Images = models.ManyToManyField(ImageFilm,null=True,blank=True)
+    # Image principale representatve du film (a afficher lors des recherches, du panier, etc.,null=True,blank=True)
+    FamilleTag = models.ManyToManyField('tags.FamilleTag',null=True,blank=True)
+    Type = models.CharField(max_length=200,null=True,blank=True)
+    Description_courte = models.CharField(max_length=200,null=True,blank=True)
+    Description = models.CharField(max_length=400,null=True,blank=True)
+    Valeur_Ticket = models.FloatField(null=True,blank=True)
+    Mise_en_avant = models.CharField(max_length=200,null=True,blank=True)
+    Acteurs = models.ManyToManyField(Acteur,null=True,blank=True)
+    Lien = models.ManyToManyField('liens.Lien',null=True,blank=True)
+    Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
+    Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
+    Avis = models.ManyToManyField(Avis,null=True,blank=True)
+    Prix = models.ForeignKey('Prix',null=True,blank=True)
 
 class ImageActeur(models.Model):
     Nom = models.CharField(max_length=200,null=True,blank=True)
@@ -35,6 +82,8 @@ class ImageActeur(models.Model):
     Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
     Lien = models.ForeignKey('liens.Lien',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
+    Prix = models.FloatField(null=True,blank=True)
+
     def ___str__(self):
     	return self.Nom
     def __unicode__(self):
@@ -79,7 +128,10 @@ class ApiLiee(models.Model):
         return self.Nom
     def __unicode__(self):
         return self.Nom
-    
+
+class TypeImageFilm(models.Model):
+    Nom =  models.CharField(max_length=200,null=True,blank=True)
+
 class ImageFilm(models.Model):
     ApiLiee = models.ManyToManyField(ApiLiee,null=True,blank=True)
     Nom = models.CharField(max_length=200,null=True,blank=True)
@@ -87,7 +139,7 @@ class ImageFilm(models.Model):
     Creation = models.DateTimeField('date published',null=True,blank=True)
     Tag = models.ManyToManyField('tags.Tag',null=True,blank=True)
     FamilleTag = models.ManyToManyField('tags.FamilleTag',null=True,blank=True)
-    Type = models.CharField(max_length=200,null=True,blank=True)
+    Type = models.ForeignKey('TypeImageFilm',null=True,blank=True)
     Valeur_Ticket = models.FloatField(null=True,blank=True)
     Description_courte = models.CharField(max_length=200,null=True,blank=True)
     Description = models.CharField(max_length=400,null=True,blank=True)
@@ -96,6 +148,8 @@ class ImageFilm(models.Model):
     Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
     Lien = models.ForeignKey('liens.Lien',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
+    Prix = models.FloatField(null=True,blank=True)
+
     def ___str__(self):
     	return self.Nom
     def __unicode__(self):
@@ -122,7 +176,6 @@ class Film(models.Model):
     Images = models.ManyToManyField(ImageFilm,null=True,blank=True)
     # Image principale representatve du film (a afficher lors des recherches, du panier, etc.,null=True,blank=True)
     FamilleTag = models.ManyToManyField('tags.FamilleTag',null=True,blank=True)
-    Type = models.CharField(max_length=200,null=True,blank=True)
     Description_courte = models.CharField(max_length=200,null=True,blank=True)
     Description = models.CharField(max_length=400,null=True,blank=True)
     Valeur_Ticket = models.FloatField(null=True,blank=True)
@@ -132,6 +185,8 @@ class Film(models.Model):
     Texte_contenu = models.ManyToManyField('presentation.Texte_contenu',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
     Avis = models.ManyToManyField(Avis,null=True,blank=True)
+    Prix = models.FloatField(null=True,blank=True)
+
     def ___str__(self):
     	return self.Nom
     def __unicode__(self):
@@ -166,6 +221,8 @@ class ImageVente(models.Model):
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
     Gratuit = models.NullBooleanField(blank=True)
     Avis = models.ManyToManyField(Avis,null=True,blank=True)
+    Prix = models.FloatField(null=True,blank=True)
+
     def ___str__(self):
     	return self.Nom
     def __unicode__(self):
@@ -195,6 +252,8 @@ class Pack(models.Model):
     Lien = models.ForeignKey('liens.Lien',null=True,blank=True)
     Note_divers = models.ManyToManyField('notes.Note_divers',null=True,blank=True)
     Avis = models.ManyToManyField(Avis,null=True,blank=True)
+    Prix = models.FloatField(null=True,blank=True)
+
     def ___str__(self):
     	return self.Nom
     def __unicode__(self):
