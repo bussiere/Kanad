@@ -181,6 +181,7 @@ class Film(models.Model):
     Pub_date = models.DateTimeField('date published',null=True,blank=True)
     Creation = models.DateTimeField('date published',null=True,blank=True)
     Images = models.ManyToManyField(ImageFilm,null=True,blank=True)
+    ImagesFilmPreview = models.ManyToManyField(ImageFilm,null=True,blank=True)
     # Image principale representatve du film (a afficher lors des recherches, du panier, etc.,null=True,blank=True)
     FamilleTag = models.ManyToManyField('tags.FamilleTag',null=True,blank=True)
     Description_courte = models.CharField(max_length=200,null=True,blank=True)
