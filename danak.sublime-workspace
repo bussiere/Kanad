@@ -1,0 +1,257 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "thanks.txt",
+			"settings":
+			{
+				"buffer_size": 39,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/bussiere/workspace/Satsuki/script/fb.py",
+		"/home/bussiere/.Xresources",
+		"/home/bussiere/.bashrc",
+		"/home/bussiere/.i3/config",
+		"/home/bussiere/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/bussiere/.config/terminator/config",
+		"/home/bussiere/anna/globalbusiness.txt",
+		"/home/bussiere/anna/globalson1.txt",
+		"/home/bussiere/anna/globalson2.txt",
+		"/home/bussiere/anna/Synthese.txt",
+		"/home/bussiere/anna/shouldntgo.txt",
+		"/home/bussiere/anna/Traduction.txt",
+		"/home/bussiere/workspace/Satsuki/contact/models.py",
+		"/home/bussiere/workspace/Satsuki/gout/models.py",
+		"/home/bussiere/workspace/Satsuki/succulent/models.py",
+		"/home/bussiere/workspace/Satsuki/note/models.py",
+		"/home/bussiere/workspace/Satsuki/communication/models.py",
+		"/home/bussiere/workspace/Satsuki/event/models.py",
+		"/home/bussiere/workspace/Satsuki/link/models.py",
+		"/home/bussiere/workspace/Satsuki/person/models.py",
+		"/home/bussiere/workspace/Satsuki/Todo.txt",
+		"/home/bussiere/anna/instructions.txt",
+		"/home/bussiere/workspace/Satsuki/place/models.py",
+		"/home/bussiere/workspace/Satsuki/service/models.py",
+		"/home/bussiere/workspace/Satsuki/venv/lib/python2.7/site-packages/django/contrib/comments/moderation.py",
+		"/home/bussiere/workspace/Satsuki/venv/lib/python2.7/site-packages/south/tests/db.py",
+		"/home/bussiere/workspace/Satsuki/tag/models.py",
+		"/home/bussiere/workspace/Satsuki/script/saveemail.py",
+		"/home/bussiere/workspace/Satsuki/script/importcontact.py",
+		"/home/bussiere/workspace/Satsuki/script/savefb.py",
+		"/home/bussiere/workspace/Satsuki/script/savetweet.py",
+		"/home/bussiere/workspace/Satsuki/communication/views.py",
+		"/home/bussiere/workspace/Satsuki/file/models.py",
+		"/home/bussiere/workspace/Satsuki/settings.py",
+		"/home/bussiere/workspace/Satsuki/urls.py",
+		"/home/bussiere/workspace/Satsuki/generaadm.py",
+		"/home/bussiere/workspace/Satsuki/account/models.py",
+		"/home/bussiere/workspace/Satsuki/todo/models.py",
+		"/home/bussiere/workspace/Sumomo/script/saveemail.py",
+		"/home/bussiere/workspace/Jackpoint/jackpoint/hand/scripts.py",
+		"/home/bussiere/workspace/Sumomo/emails/views.py",
+		"/home/bussiere/workspace/Sumomo/tags/admin.py",
+		"/home/bussiere/workspace/Sumomo/emails/admin.py",
+		"/home/bussiere/workspace/Sumomo/emails/models.py",
+		"/home/bussiere/workspace/Sumomo/attachments/models.py",
+		"/home/bussiere/workspace/Sumomo/attachments/admin.py",
+		"/home/bussiere/workspace/Sumomo/templates/index.html",
+		"/home/bussiere/workspace/Sumomo/urls.py",
+		"/home/bussiere/saveemail/saveemailpa.py",
+		"/home/bussiere/workspace/JackpointFinal/jackpoint/engine/views.py",
+		"/home/bussiere/workspace/JackpointFinal/jackpoint/urls.py",
+		"/home/bussiere/workspace/Sumomo/tags/models.py",
+		"/home/bussiere/workspace/JackpointFinal/jackpoint/hand/models.py",
+		"/home/bussiere/workspace/JackpointFinal/jackpoint/date/admin.py",
+		"/home/bussiere/workspace/dodgetactic/README.md",
+		"/home/bussiere/workspace/dodgetactic/Gameplay.txt",
+		"/home/bussiere/saveemail/testcouchdb.py",
+		"/home/bussiere/test.py",
+		"/home/bussiere/Downloads/WolframAlpha--my_facebook__Friend_network__2012_08_30_1946.svg",
+		"/tmp/sendgmail.py",
+		"/tmp/test.py",
+		"/home/bussiere/saveemail/1320.txt",
+		"/home/bussiere/saveemail/166.txt",
+		"/home/bussiere/saveemail/darcs-initp.py__3073_0__cs-initp.py",
+		"/home/bussiere/saveemail/map.js",
+		"/home/bussiere/test.html",
+		"/home/bussiere/cvh.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/bussiere/workspace/Satsuki"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"acces_token",
+			"models.TextField()",
+			"\"File\"",
+			"‘",
+			"’",
+			"pseudo",
+			"nationn",
+			"Note.Avis",
+			"link.Link",
+			"Todo",
+			"note.Note",
+			"'%\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"models.TextField(blank=True, null=True)",
+			"\"file.File\"",
+			"'",
+			"note.Avis",
+			"link.Lien",
+			"note.Avis"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "thanks.txt",
+					"settings":
+					{
+						"buffer_size": 39,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 134.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 533.0,
+	"status_bar_visible": true
+}
